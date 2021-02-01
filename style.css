@@ -1,0 +1,256 @@
+/* GENREAL */
+body {
+  width: 1920px;
+  margin: auto;
+}
+.dropdown-item-text{
+  width: 500px;
+  height: 400px;
+  background-color: white
+  ;
+}
+/* HEADER */
+header {
+  background-image: url(img/background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 680px;
+  padding-top: 40px;
+}
+header > div {
+  display: flex;
+  justify-content: center;
+}
+header h2,
+header h5 {
+  color: white;
+}
+.navColor {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.767);
+  width: 65%;
+  margin: auto;
+  top: 420px;
+  position: relative;
+}
+.detailButtom1 {
+  left: 6px;
+  top: 7.5px;
+  width: 250px;
+  color: rgb(0, 0, 0);
+  border: 1px solid #d6d3da;
+  background: rgb(254, 254, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 254, 246, 1) 0%,
+    rgba(227, 227, 227, 1) 95%,
+    rgba(227, 227, 227, 1) 100%
+  );
+}
+.pos_hamburger {
+  width: 50px;
+  right: 20px;
+  float: right;
+
+  border: white 1px solid;
+  background-color: #0000004d;
+}
+.pos_hamburger > button {
+  color: white;
+}
+
+/* MAIN */
+/* header main */
+#buttom_price {
+  background: rgb(238, 238, 238);
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgba(175, 175, 175, 0.657) 100%
+  );
+  border-radius: 5px;
+  width: 170px;
+  justify-content: center;
+  display: flex;
+}
+
+.buttomCalandar {
+  background-color: #eeeeee;
+  color: black;
+  border: 1px solid #d6d3da;
+  right: 13px;
+  position: relative;
+}
+
+.btn-recherche {
+  height: 100%;
+  width: 290px;
+  border-radius: 0;
+  background-color: #289426b2;
+}
+/* main main */
+
+.case_main {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.spcBetw {
+  display: flex;
+  justify-content: space-between;
+}
+.ButtomResv {
+  background-color: rgb(53, 143, 53);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+hr {
+  color: gray;
+  margin: 40px 0;
+}
+.space-car {
+  padding-left: 130px;
+  padding-top: 100px;
+}
+.space-car p,
+.space-car a {
+  margin: 30px 0;
+}
+.space-car h3 {
+  font-size: 50px;
+}
+.mrg_lr_30px {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+footer img {
+  width: 300px;
+}
+footer > div {
+  margin: 60px 50px 0 50px;
+}
+.bold {
+  font-weight: bold;
+}
+/* tablette desig */
+@media (max-width: 930px) {
+  /* GENERAL */
+  body {
+    width: 100%;
+  }
+
+  /* HEADER */
+  header {
+    background-size: 290%;
+  }
+  /* NAV BAR */
+  .navColor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "itemA itemB itemC"
+      "itemD itemD itemD";
+  }
+  .itemA {
+    grid-area: itemA;
+  }
+  .itemB {
+    grid-area: itemB;
+  }
+  .itemC {
+    grid-area: itemC;
+  }
+  .itemD {
+    grid-area: itemD;
+  }
+  .btn-recherche {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    background-color: #28942671;
+  }
+  .detailButtom1 {
+    width: 170px;
+  }
+  .btmCorrection2-3 {
+    left: -25px;
+    position: relative;
+  }
+  /* main */
+  .padtop70 {
+    padding-top: 70px;
+  }
+  .space-car {
+    padding-top: 40px;
+    display: flex;
+      padding-left: 96px;
+  }
+  .case_main {
+    grid-template-columns: 3fr 2fr;
+  }
+  .space-car h3,
+  .space-car p {
+    display: none;
+  }
+  .ButtomResv {
+    height: 50px;
+    top: 130px;
+    position: relative;
+  }
+}
+/* Media smartphone */
+@media (max-width: 679px) {
+  body {
+    width: 100%;
+  }
+  header {
+    background-size: 390%;
+  }
+  .navColor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    top: 230px;
+    width: 92%;
+    grid-template-areas:
+      "itemA"
+      "itemB"
+      "itemC"
+      "itemD";
+  }
+  .itemA > div {
+    width: 97%;
+  }
+  .itemB > form,
+  .itemC > form {
+    width: 106%;
+    left: 10px;
+    position: relative;
+  }
+  .buttom_price {
+    position: relative;
+    top: 50px;
+  }
+  .space-car p,
+  .space-car a {
+    margin: 8px 0;
+  }
+  .space-car {
+    padding-left: 0;
+  }
+  .padtop70 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .ButtomResv {
+    top: 90px;
+  }
+}
